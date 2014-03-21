@@ -1,0 +1,26 @@
+{
+  "name": "es6-destructure-brunch",
+  "version": "1.7.0",
+  "description": "",
+  "author": "Matt McCray <matt@elucidata.net>",
+  "homepage": "https://github.com/elucidata/es6-destructure-brunch",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:elucidata/es6-destructure-brunch.git"
+  },
+  "main": "./lib/index",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rm -rf lib && coffee --bare --output lib/ src/",
+    "test": "node_modules/.bin/mocha --require test/common.js"
+  },
+  "dependencies": {
+    "envify": "^1.2.1",
+    "react": "^0.10.0-rc1",
+    "es6-destructuring-jstransform": "git://github.com/andreypopp/es6-destructuring-jstransform"
+  },
+  "devDependencies": {
+    "mocha": "1.11.0",
+    "chai": "1.7.0"
+  }
+}
