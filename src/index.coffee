@@ -9,7 +9,6 @@ module.exports = class ES6DestructurePlugin
   constructor: (@config) ->
     @filter= @config?.plugins?.es6Destructure?.fileFilter or /^(app|test)/
     @verbose= @config?.plugins?.es6Destructure?.verbose or no
-    console.log "INIT", transform
 
   compile: (params, callback) ->
     source= params.data
