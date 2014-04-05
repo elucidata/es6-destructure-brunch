@@ -17,7 +17,7 @@
   "dependencies": {
     "envify": "^1.2.1",
     "react": "^0.10.0-rc1",
-    "es6-destructuring-jstransform": "git://github.com/andreypopp/es6-destructuring-jstransform"
+    "es6-destructuring-jstransform": "^0.1.0"
   },
   "devDependencies": {
     "mocha": "1.11.0",
